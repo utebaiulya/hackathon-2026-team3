@@ -63,9 +63,7 @@ Different sections store “ratings” in different shapes, so we normalize ever
 ### 2.3 Averaging question sets
 For a section like `experience_m` or `expertise_m`, compute:
 
-$$
-avg = \frac{\sum ratings}{ # questions}
-$$
+$$avg = \frac{\sum ratings}{ number of questions}$$
 
 To convert any average to a 0–100 score:
 
@@ -407,5 +405,6 @@ Let $$S = avg(expertise_talent_skill[Q1..Q7])$$ (booleans → 0/1)
 $$Ex = 100 \times (0.55 \times avg(expertise_m) + 0.30 \times avg(content_quality_m) + 0.15 \times S)$$
 
 If you want, I can update the Python code to include these four sections in a way that (a) avoids double-counting and (b) keeps YMYL Trust logic intact. Just tell me whether you prefer them as pillar inputs (E/Ex/T) or as final score modifiers/gates. 
+
 
 
