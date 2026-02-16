@@ -1,6 +1,6 @@
 ﻿# hackathon-2026-team3
 
-#  E‑E‑A‑T Scoring Rules (Derived from Your JSON)
+#  E‑E‑A‑T Scoring Rules
 
 
 
@@ -403,6 +403,7 @@ Let $$S = avg(expertise_talent_skill[Q1..Q7])$$ (booleans → 0/1)
 $$Ex = 100 \times (0.55 \times avg(expertise_m) + 0.30 \times avg(content_quality_m) + 0.15 \times S)$$
 
 If you want, I can update the Python code to include these four sections in a way that (a) avoids double-counting and (b) keeps YMYL Trust logic intact. Just tell me whether you prefer them as pillar inputs (E/Ex/T) or as final score modifiers/gates. 
+
 
 
 
